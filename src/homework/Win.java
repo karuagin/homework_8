@@ -46,7 +46,7 @@ public class Win extends JFrame {
         JCheckBox[] jcb = new JCheckBox[4];
         for (int i = 0; i < jcb.length; i++) {
             jcb[i] = new JCheckBox("Check #" + i);
-//            bgr3.add( jcb[i]);
+            bgr3.add( jcb[i]);
             jp[1].add(jcb[i]);
         }
 
@@ -78,12 +78,12 @@ public class Win extends JFrame {
         jp[3].add(js);
         js.addChangeListener(e -> jlab.setText("Value: " + js.getValue()));
 
-//        js.addChangeListener(new ChangeListener() {
-//            @Override
-//            public void stateChanged(ChangeEvent e) {
-//                jlab.setText("Value: " + js.getValue());
-//            }
-//        });
+       js.addChangeListener(new ChangeListener() {
+            @Override
+            public void stateChanged(ChangeEvent e) {
+                jlab.setText("Value: " + js.getValue());
+            }
+        });
         jlab.setBounds(10, 10, 100, 20);
         js.setBounds(20, 40, 300, 100);
         js.setBackground(new Color(160, 255, 160));
@@ -101,7 +101,7 @@ public class Win extends JFrame {
         mainMenu.add(mEdit);
 
         mFile.add(miFileNew);
-        mFile.addSeparator(); // разделительная линия
+        mFile.addSeparator();
         mFile.add(miFileExit);
 
         miFileExit.addActionListener(e -> System.exit(0));
