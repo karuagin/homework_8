@@ -17,28 +17,28 @@ public class Form1 extends JFrame {
         for (int i = 0; i < 5; i++) {
             jbs[i] = new JButton("#" + i);
         }
-        setLayout(new BorderLayout()); // выбор компоновщика элементов
-        add(jbs[0], BorderLayout.EAST); // добавление кнопки на форму
+        setLayout(new BorderLayout());
+        add(jbs[0], BorderLayout.EAST);
         add(jbs[1], BorderLayout.WEST);
         add(jbs[2], BorderLayout.SOUTH);
         add(jbs[3], BorderLayout.NORTH);
         add(jbs[4], BorderLayout.CENTER);
 
-//        JButton button = new JButton("Button 1 (PAGE_START)");
+//       JButton button = new JButton("Button 1 (PAGE_START)");
 //        JLabel jLabel = new JLabel("");
-//        button.addActionListener(new ActionListener() {
+//       button.addActionListener(new ActionListener() {
 //            @Override
 //            public void actionPerformed(ActionEvent e) {
 //                jLabel.setText(jLabel.getText() + "123");
 //            }
 //        });
-//        button.addActionListener(e -> jLabel.setText(jLabel.getText() + "123fhdfhgf"));
-//
-//
+//       button.addActionListener(e -> jLabel.setText(jLabel.getText() + "123fhdfhgf"));
+
+
 //        button.addKeyListener(new KeyListener() {
 //            @Override
 //            public void keyTyped(KeyEvent e) {
-//
+
 //            }
 //            @Override
 //            public void keyPressed(KeyEvent e) {
@@ -46,8 +46,8 @@ public class Form1 extends JFrame {
 //                jLabel.setText(jLabel.getText() + "908");
 //            }
 //            @Override
-//            public void keyReleased(KeyEvent e) {
-//
+//           public void keyReleased(KeyEvent e) {
+
 //            }
 //        });
 //        addMouseListener(new MouseAdapter() {
@@ -56,7 +56,7 @@ public class Form1 extends JFrame {
 //                System.out.println("x= " + e.getX() + " y= " +e.getY());
 //            }
 //        });
-////
+
 //        add(jLabel);
 //        add(button, BorderLayout.PAGE_START);
 //        button = new JButton("Button 2 (CENTER)");
